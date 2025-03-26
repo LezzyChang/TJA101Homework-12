@@ -8,14 +8,14 @@ public class hw2_2 {
 			s1 *= s2; // s1=1*1 ,s2=1*2
 		}
 		System.out.println(s1);
-		
+		//while
 		int f1 =1;
 		int f2 =1;
 		while(f2++ < 10) {
 			f1 *= f2;
 		}
 		System.out.println(f1);
-		
+		// do while
 		int h1 =1;
 		int h2 =0;
 		do {
