@@ -11,9 +11,13 @@ public class homework7_5 {
 		try(ObjectInputStream ois = new ObjectInputStream(new FileInputStream(filePath))) {
 			Dog dog = (Dog) ois.readObject();
 			Cat cat = (Cat) ois.readObject();
+			Dog dog1 = (Dog) ois.readObject();
+			Cat cat1 = (Cat) ois.readObject();
 			
 			dog.speak();
 			cat.speak();
+			dog1.speak();
+			cat1.speak();
 			
 		}catch(FileNotFoundException fn) {
 			System.out.println("找不到檔案～");

@@ -10,6 +10,7 @@ public class homework7_4 {
 		String path = "C:\\data";
 		File fl = new File(path);
 		
+		//這邊先建立資料夾
 		if(!fl.exists()) {
 			boolean created = fl.mkdir();
 			if(created) {
@@ -25,6 +26,8 @@ public class homework7_4 {
 		
 		Dog dog = new Dog("woof");
 		Cat cat = new Cat("meow");
+		Dog dog1 = new Dog("tsao");
+		Cat cat1 = new Cat("gan");
 		
 		try {
 			FileOutputStream fo = new FileOutputStream(outputFilePath);
@@ -32,6 +35,8 @@ public class homework7_4 {
 			
 			op.writeObject(dog);
 			op.writeObject(cat);
+			op.writeObject(dog1);
+			op.writeObject(cat1);
 			System.out.println("已成功將dog&cat物件寫入Object.ser裡");
 			op.close();
 			fo.close();
